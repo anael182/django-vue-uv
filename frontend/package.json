@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:full": "concurrently --kill-others-on-fail -n BACK,FRONT -c auto \"cd ../backend && uv run python manage.py runserver 8000\" \"vite\"",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .js,.vue",
     "format": "prettier . --write"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@vitejs/plugin-vue": "^6.0.2",
+    "concurrently": "^9.2.1",
     "eslint": "^10.0.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",

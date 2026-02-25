@@ -1,0 +1,8 @@
+{
+  "name": "django-vue-uv",
+  "private": true,
+  "scripts": {
+    "start": "yarn --cwd frontend dev:full",
+    "dev": "yarn --cwd frontend dev:full"
+  }
+}
