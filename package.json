@@ -2,7 +2,9 @@
   "name": "django-vue-uv",
   "private": true,
   "scripts": {
+    "dev": "yarn --cwd frontend dev:full",
     "start": "yarn --cwd frontend dev:full",
-    "dev": "yarn --cwd frontend dev:full"
+    "lint": "uv run ruff check backend && yarn --cwd frontend lint",
+    "format": "uv run ruff format backend && yarn --cwd frontend format"
   }
 }
