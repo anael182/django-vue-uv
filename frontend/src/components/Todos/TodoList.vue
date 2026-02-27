@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   todos: { type: Array, default: () => [] },
   loading: { type: Boolean, default: false },
 })

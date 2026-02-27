@@ -49,8 +49,8 @@ function save() {
 <template>
   <v-dialog
     :model-value="modelValue"
-    @update:model-value="(v) => emit('update:modelValue', v)"
     max-width="720"
+    @update:model-value="(v) => emit('update:modelValue', v)"
   >
     <v-card rounded="xl">
       <v-card-title>Modifier la tâche</v-card-title>
