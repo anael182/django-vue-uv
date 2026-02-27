@@ -2,9 +2,9 @@
 import { ref, computed, onMounted } from 'vue'
 import { todosApi } from '../api/todos'
 
-import TodoForm from '../components/TodoForm.vue'
-import TodoList from '../components/TodoList.vue'
-import TodoEditDialog from '../components/TodoEditDialog.vue'
+import TodoForm from '../components/Todos/TodoForm.vue'
+import TodoList from '../components/Todos/TodoList.vue'
+import TodoEditDialog from '../components/Todos/TodoEditDialog.vue'
 
 const todos = ref([])
 const loading = ref(false)
