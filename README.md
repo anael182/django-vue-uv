@@ -6,13 +6,13 @@ Monorepo **Django (API)** + **Vue 3 (Vite) + Vuetify**.
 - **Frontend** : Vue 3 + Vite + Vuetify
 - **Python deps** : `uv`
 - **Node deps** : `yarn`
-- **DB** : SQLite locale **non commitée**
+- **DB** : SQLite locale
 
 ---
 
 ## Prérequis
 
-- Python 3.12+ (ou compatible avec ton projet)
+- Python 3.12+
 - `uv`
 - Node.js (LTS recommandé)
 - Yarn (v1+)
